@@ -1,23 +1,34 @@
-let basliq =document.getElementById("basliq")
-console.log(basliq);
+// const arr1=[1,2,3,4,5];
+// const arr2=[6,7,8,9,];
+// const arr3=[0,...arr1,...arr2];
+// console.log(arr3);
 
-let metnler=document.getElementsByClassName("metnler")
-console.log(metnler);
+// function avarageGrade(...numbers) {
+//     if (numbers.length===0) {
+//         return null;
+        
+//     }
+//     else{
+//         let sum=0;
+//         for (let number of numbers) {
+//             sum+=number;
+//         }
+//         return sum/numbers.length;}
+// }
+// console.log(avarageGrade())
 
-let button=document.getElementsByTagName("ul")
-console.log(button);
 
-let qutu=document.querySelector(".qutu")
-console.log(qutu);
+// const person={name:'John',hobbies:['reading','swimming']};
+// // const person2={...person};
+// // console.log('person', person2);
+// // const copyPerson={...person.hobbies=['reading','swimming','cooking']};
 
-let butunmetnler=document.querySelectorAll(".metn")
-console.log(butunmetnler);
+// const newperson = {...person,hobbies:[...person.hobbies,'cooking']};
+// // const newperson=person;
+// console.log('newperson',newperson);
 
-function metni_deyis(metn) {
-    document.getElementById("metni deyis").textContent="goat-Ronaldo"
-}
 
-function rengi_deyis(color) {
-    document.querySelector(".change_color").css
-}
+
+const convertToObj=(['name','john'],['age',25])
+console.log(convertToObj);
 
