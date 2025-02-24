@@ -1,6 +1,6 @@
 const input = document.querySelector('input');
 const add = document.querySelector('.add');
-const list=document.querySelector('.list')
+const list=document.querySelector('#list')
 
 add.addEventListener('click', function () {
     let inputValue = input.value.trim();
@@ -9,7 +9,8 @@ add.addEventListener('click', function () {
     let li = document.createElement('li');
     li.innerHTML = `${inputValue} 
         <button class="edit"><i class="fa-solid fa-pen"></i></button> 
-        <button class="delete-button"><i class="fa-solid fa-trash"></i></button>`;
+        <button class="delete-button"><i class="fa-solid fa-trash"></i></button>
+        <button class="done-button"><i class="fa-regular fa-square"></i></button>`;
 
     let deleteButton = li.querySelector('.delete-button');
     deleteButton.addEventListener('click', () => li.remove());
@@ -36,6 +37,12 @@ add.addEventListener('click', function () {
         });
     });
 
+    let doneButton = li.querySelector('.done-button')
+    doneButton.addEventListener('click',function toggleDone () {
+        li=this.parentElement
+        li.classList.toggle('donetask')
+    })
+    
     list.appendChild(li);
     input.value = '';
 });
