@@ -96,3 +96,14 @@ i:hover {
     color: aliceblue;
     cursor: pointer;
 }
+.done-button{
+    background: none;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+.donetask{
+    text-decoration: line-through;
+    color: red;
+}
+
